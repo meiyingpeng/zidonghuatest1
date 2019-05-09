@@ -1,0 +1,12 @@
+*** Settings ***
+Library           Selenium2Library
+
+*** Test Cases ***
+jjj
+    Open Browser    http://192.168.1.10:8216/crm/dist    gc
+    Maximize Browser Window
+    input text    //*[@id="app"]/div/article/form/div[1]/div/div/div/input    admin
+    input text    //*[@id="app"]/div/article/form/div[2]/div/div/div/input    123456
+    sleep    10
+    Click Button    //*[@id="app"]/div/article/form/button
+    Comment    Close Browser
